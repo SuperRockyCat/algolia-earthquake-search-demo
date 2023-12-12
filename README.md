@@ -13,7 +13,7 @@ In general, I found the assigment to be fairly straightforward. Implementing my 
 - This project is hosted on github pages, you can find it [here](https://superrockycat.github.io/algolia-earthquake-search-demo/)
 - To navigate to a specific earthquake location, simply click one of the cards on the left hand side
 - You can also filter the earthquake data by selecting a refinement from the second columm or by searching for a location in the search bar at the top:
-![earthquake-search(./earthquake-search.gif]
+![earthquake-search(./earthquake-search-smaller.gif]
 
 ## Running Locally
 
