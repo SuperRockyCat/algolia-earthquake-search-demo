@@ -41,7 +41,7 @@ Hey Matt,
 
 Don't be sorry! We're always open to feedack on the product. Sorry to hear that the new design is causing headaches for you. Are you attempting to clear the Index from the Manage index dropdown like so?:
 
-![algolia-clear-index-ui](./screenshots/clear-index.png)
+![algolia-clear-index-ui](./clear-index.png)
 
 If not, let me know what your process looks like and how you'd prefer to clear the index and I'll pass it along to our product team. It's also worth highlighting that you can skip using the dashboard entirely to accomplish this task. If index clearing is something you do frequently as part of your development process, this could be easily accomplished by writing a small script that interacts with our API. I'd be happy to show you how to accomplish this in a screenshare as well, just let me know!
 
