@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Algolia 2023 Earthquakes Map
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![earthquakes-ui](./earthquakes-ui.png)
 
-## Available Scripts
+This project uses Algolia's `react-instantsearch` library, `react-leaflet`, and `semantic-ui` to create a basic UI that visualizes earhquake data on a map. The project utilizes [this free dataset](https://www.kaggle.com/datasets/syedanwarafridi/earthquake-events-worldwide-2023) from Kaggle.
 
-In the project directory, you can run:
+The goal of this project was to learn as much as I could about the `react-instantsearch` library. The shape of the project itself was determined by the dataset I chose. Since the data included coordinate data, it seemed like the natural choice to visualize that data on the map. I also implemented semantic UI to make the experience cleaner.
 
-### `npm start`
+In general, I found the assigment to be fairly straightforward. Implementing my Algolia data was relatively easy to do. Most of the complexity camed from implementing the map portion. Given more time, I would also make the map react when performing a search or toggling a refinement, but I settled on the click to navigate functionality for now. I used `react-leaflet` because the Algolia documentation provided a code sample, however it would have helped if the documentation went into additonal detail here, specifically around how to connect the leaflet map to my Algolia components— it seems I may have been a little limited here because I didn't use the built in geosearch functionality. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Using the App
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- This project is hosted on github pages, you can find it [here](https://superrockycat.github.io/algolia-earthquake-search-demo/)
+- To navigate to a specific earthquake location, simply click one of the cards on the left hand side
+- You can also filter the earthquake data by selecting a refinement from the second columm or by searching for a location in the search bar at the top:
+![earthquakes-ui](./earthquake-search-smaller.gif)
 
-### `npm test`
+## Running Locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clone this repo
+- From the terminal `cd algolia-earthquake-search-demo`
+- `npm install`
+- `npm run start`
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
